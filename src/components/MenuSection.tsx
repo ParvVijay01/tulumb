@@ -7,16 +7,16 @@ export default function MenuSection() {
       {/* Signature Kebabs Hero */}
       <section className="relative w-full h-[60vh] overflow-hidden group">
         <div className="absolute inset-0 bg-gradient-to-t from-[#10221a] via-[#10221a]/20 to-transparent z-10"></div>
-        <img 
-          src={IMAGES.signatureKebabs} 
-          alt="Signature Kebabs" 
+        <img
+          src={IMAGES.signatureKebabs}
+          alt="Signature Kebabs"
           className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute bottom-12 left-12 z-20">
+        <div className="absolute bottom-6 md:bottom-12 left-6 md:left-12 right-6 md:right-auto z-20">
           <span className="text-primary-green font-bold tracking-[0.2em] uppercase text-sm mb-2 block">The Art of Fire</span>
-          <h2 className="text-6xl font-extrabold text-white tracking-tight">Signature Kebabs</h2>
-          <p className="text-slate-300 max-w-xl mt-4 text-lg">Smoked to perfection in our traditional clay ovens using heritage recipes and modern techniques.</p>
+          <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight">Signature Kebabs</h2>
+          <p className="text-slate-300 max-w-xl mt-4 text-base md:text-lg">Smoked to perfection in our traditional clay ovens using heritage recipes and modern techniques.</p>
         </div>
       </section>
 
@@ -25,9 +25,9 @@ export default function MenuSection() {
         <div className="mb-16">
           <div className="group relative overflow-hidden rounded-xl bg-[#1a2e25]/30 border border-primary-green/20 flex flex-col lg:flex-row items-center">
             <div className="w-full lg:w-1/2 aspect-video lg:aspect-square overflow-hidden">
-              <img 
-                src={IMAGES.hareBhare} 
-                alt="Hare Bhare Kebab" 
+              <img
+                src={IMAGES.hareBhare}
+                alt="Hare Bhare Kebab"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
@@ -36,8 +36,8 @@ export default function MenuSection() {
               <div className="inline-flex items-center gap-2 bg-primary-green/20 text-primary-green px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
                 <Star className="w-3 h-3 fill-current" /> Popular Choice
               </div>
-              <h3 className="text-4xl font-bold text-white mb-4">Hare Bhare Kebab</h3>
-              <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Hare Bhare Kebab</h3>
+              <p className="text-lg md:text-xl text-slate-300 mb-6 leading-relaxed">
                 A classic reimagined. Fresh garden spinach, hand-crushed green peas, and toasted aromatic spices blended with artisanal paneer.
               </p>
               <div className="space-y-4 mb-8">
@@ -50,9 +50,9 @@ export default function MenuSection() {
                   <span className="text-slate-400 text-sm">Chef's Signature Spices & Mint Chutney</span>
                 </div>
               </div>
-              <div className="flex items-center justify-between border-t border-primary-green/10 pt-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-t border-primary-green/10 pt-8 gap-4 sm:gap-0">
                 <span className="text-3xl font-extrabold text-white">₹425</span>
-                <button className="bg-primary-green/10 hover:bg-primary-green text-primary-green hover:text-[#10221a] px-8 py-3 rounded-xl font-bold transition-all border border-primary-green/30">
+                <button className="w-full sm:w-auto bg-primary-green/10 hover:bg-primary-green text-primary-green hover:text-[#10221a] px-8 py-3 rounded-xl font-bold transition-all border border-primary-green/30">
                   Add to Order
                 </button>
               </div>
@@ -70,9 +70,9 @@ export default function MenuSection() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-6">{item.description}</p>
               <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.name} 
+                <img
+                  src={item.image}
+                  alt={item.name}
                   className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                   referrerPolicy="no-referrer"
                 />
@@ -85,16 +85,16 @@ export default function MenuSection() {
       {/* Global Mains Hero */}
       <section className="relative w-full h-[60vh] overflow-hidden group">
         <div className="absolute inset-0 bg-gradient-to-t from-[#10221a] via-[#10221a]/20 to-transparent z-10"></div>
-        <img 
-          src={IMAGES.globalMains} 
-          alt="Global Mains" 
+        <img
+          src={IMAGES.globalMains}
+          alt="Global Mains"
           className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute bottom-12 left-12 z-20">
+        <div className="absolute bottom-6 md:bottom-12 left-6 md:left-12 right-6 md:right-auto z-20">
           <span className="text-primary-green font-bold tracking-[0.2em] uppercase text-sm mb-2 block">World Flavors</span>
-          <h2 className="text-6xl font-extrabold text-white tracking-tight">Global Mains</h2>
-          <p className="text-slate-300 max-w-xl mt-4 text-lg">A curated journey through the finest culinary traditions, from Mediterranean pastas to Northwest frontier curries.</p>
+          <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight">Global Mains</h2>
+          <p className="text-slate-300 max-w-xl mt-4 text-base md:text-lg">A curated journey through the finest culinary traditions, from Mediterranean pastas to Northwest frontier curries.</p>
         </div>
       </section>
     </div>

@@ -26,18 +26,18 @@ export default function VibeSection() {
 
         <div className="flex gap-8 overflow-x-auto hide-scrollbar pb-12 -mx-6 px-6 snap-x snap-mandatory">
           {VIBE_CARDS.map((card, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="min-w-[320px] md:min-w-[500px] snap-center"
+              className="min-w-[85vw] md:min-w-[500px] snap-center"
             >
               <div className="relative group overflow-hidden rounded-xl aspect-[16/10] mb-6">
-                <img 
-                  src={card.image} 
-                  alt={card.title} 
+                <img
+                  src={card.image}
+                  alt={card.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
                 />

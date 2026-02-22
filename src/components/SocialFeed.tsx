@@ -17,13 +17,13 @@ export default function SocialFeed() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {REVIEWS.map((review, i) => (
-            <div key={i} className="bg-white/5 border border-white/10 p-8 rounded-2xl flex flex-col gap-6 backdrop-blur-sm relative overflow-hidden group">
+            <div key={i} className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl flex flex-col gap-6 backdrop-blur-sm relative overflow-hidden group">
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Quote className="w-24 h-24 text-primary" />
               </div>
               <div className="flex items-center gap-4">
-                <div 
-                  className="size-14 rounded-full border-2 border-primary/40 bg-cover bg-center" 
+                <div
+                  className="size-14 rounded-full border-2 border-primary/40 bg-cover bg-center"
                   style={{ backgroundImage: `url(${review.image})` }}
                 ></div>
                 <div>
